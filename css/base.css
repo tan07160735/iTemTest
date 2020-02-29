@@ -1,0 +1,131 @@
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: 400;
+}
+
+a,
+body {
+  color: #333;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.block,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+img,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+input,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  -webkit-appearance: none;
+  resize: none;
+}
+
+a,
+article,
+aside,
+body,
+button,
+dd,
+details,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+img,
+input,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+select,
+table,
+tbody,
+td,
+textarea,
+th,
+tr,
+ul {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.bottom,
+em,
+i {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=base.css.map */

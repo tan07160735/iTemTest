@@ -1,0 +1,110 @@
+body {
+  width: 100%;
+}
+
+header {
+  width: 1156px;
+  height: 44px;
+  margin: 0 auto;
+  padding: 22px;
+}
+header .logo {
+  float: left;
+}
+header .work {
+  float: right;
+}
+header .work p {
+  display: block;
+  width: 900px;
+  height: 28px;
+  border: 1px solid #FFB4A8;
+  line-height: 28px;
+  font-size: 12px;
+  background-color: #FEF2F2;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+main .back {
+  background-image: url(../images/login-banner.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 600px;
+}
+main .layout {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+main .layout .login-place {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 110px;
+  right: 58px;
+  background-color: #fff;
+}
+main .layout .login-place .login {
+  width: 300px;
+  height: 248px;
+  padding: 25px;
+}
+main .layout .login-place .login .head {
+  width: 300px;
+  height: 42px;
+}
+main .layout .login-place .login .username {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #DDDDDD;
+}
+main .layout .login-place .login .username input {
+  width: 270px;
+}
+main .layout .login-place .login .username img {
+  width: 100%;
+  height: 100%;
+}
+main .layout .login-place .login .password {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #DDDDDD;
+  margin-top: 20px;
+}
+main .layout .login-place .login .password input {
+  width: 270px;
+}
+main .layout .login-place .login .password img {
+  width: 100%;
+  height: 100%;
+}
+main .layout .login-place .login .btn-login {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+}
+main .layout .login-place .login .btn-login .btn1 {
+  width: 100%;
+  height: 100%;
+  background-color: #FF4400;
+}
+main .layout .login-place .login .btn-login .btn2 {
+  width: 100%;
+  height: 100%;
+  background-color: #FF4400;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=login.css.map */
