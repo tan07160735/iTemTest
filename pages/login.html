@@ -7,6 +7,8 @@
     <title>登录页面</title>
     <link rel="stylesheet" href="../sass/base.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+    <script src="../lib/self/AJAX.js"></script>
 </head>
 
 <body>
@@ -32,34 +34,47 @@
 
         <section class="layout">
 
-
-
-
             <div class="login-place">
 
                 <div class="login">
+
                     <div class="head">
-                        <h1>密码登录</h1>
+                        <h1>用户登录</h1>
                     </div>
 
-                   <div class="username">
-                       <span><i><img src="../images/login-us.png" alt=""></i></span>
-                       <input type="text" placeholder="输入用户名">
-                   </div>
+                    <div class="username">
+                        <span><i><img src="../images/login-us.png" alt=""></i></span>
+                        <input type="text" placeholder="输入用户名" class="username-text">
+                    </div>
 
-                   <div class="password">
-                    <span><i><img src="../images/login-ps.png" alt=""></i></span>
-                    <input type="password" placeholder="输入密码">
-                   </div>
-                   
-                   <div class="btn-login">
-                       <button class="btn1">登录</button>
-                       <button class="btn2">注册</button>
-                   </div>
-                   
-                    
+                    <div class="password">
+                        <span><i><img src="../images/login-ps.png" alt=""></i></span>
+                        <input type="password" placeholder="输入密码" class="password-text">
+                    </div>
 
+                    <div class="btn-login">
+                        <button class="btn1">登录</button>
+                        <button class="btn2">注册</button>
+                    </div>
                 </div>
+
+                <div class="regit login">
+                    <div class="username">
+                        <span><i><img src="../images/login-us.png" alt=""></i></span>
+                        <input type="text" placeholder="输入用户名">
+                    </div>
+
+                    <div class="password">
+                        <span><i><img src="../images/login-ps.png" alt=""></i></span>
+                        <input type="password" placeholder="输入密码">
+                    </div>
+
+                    <div class="btn-login">
+
+                        <button class="btn2 btnRedit">注册</button>
+                    </div>
+                </div>
+
             </div>
 
         </section>
