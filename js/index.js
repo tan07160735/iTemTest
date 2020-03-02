@@ -1,7 +1,33 @@
 /// <reference path="../lib/jquery/dist/jquery.min.js" />
 //轮播图
 window.onload = function(){
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.banner1', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        autoplay: {
+            delay: 1000,//1秒切换一次
+        }
+
+
+    })
+
+    var mySwiper = new Swiper('.banner2', {
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
 
@@ -27,38 +53,65 @@ window.onload = function(){
 
     })
 
+
 }
 
-//选项卡
+//渲染选项卡
+getlist()
+function getlist(){
+    $.ajax({
+        url:'./lib/index-nav.json',
+        dataType:'json',
+        success:function(res){
+           console.log(res);
 
-$('.layout > .list1 > li').hover(function(){
-      
-    //点击的 li 
-    $(this)
-    .siblings()//所有的兄弟元素，不包括自己
-    .removeClass('active') //移除active类名
-    .parent() // 找到li的父元素 ul
-    .next()// ul的父元素ol
-    .children() //ol下的li
-    .removeClass('active') //移除类名
-    .eq($(this).index()) //找到点击的li对应的ol下的li
-    .addClass('active') //添加类名
-   
-},function(){
-    $(this)
-    .siblings()//所有的兄弟元素，不包括自己
-    .removeClass('active') //移除active类名
-    .parent() // 找到li的父元素 ul
-    .next()// ul的父元素ol
-    .children() //ol下的li
-    .removeClass('active') //移除类名
-    .eq($(this).index()) //找到点击的li对应的ol下的li
-    .removeClass('active')
-})
+           let str ='';
+           
+           res.forEach(item => {
+               str += `<li>${item.title}</li>`
+           })
+
+           $('.content-item > .left > ul ')
+           .html(str)
+           .on({
+               mouseenter:()=>{
+                   $('.left-item').stop().fadeIn()
+               },
+               mouseleave:()=>{
+                $('.left-item').stop().fadeOut()
+               }
+           })
+            .children('li')
+            .on('mouseover',function(){
+               
+             const index = $(this).index()
+             const list  = res[index].list
+             console.log(list);
+
+             let str2 = ''
+
+             list.forEach(item=>{
+                 str2 += `<li>${item.name}</li>`
+             })
+
+            
+            
+             $('.left-item-list')
+             .html(str2)
+            
+                
+                
+            })
+             
+            
+           
+        }
+    })  
+}
 
 
 
-        
+
 
 
 
