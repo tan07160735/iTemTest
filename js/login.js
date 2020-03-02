@@ -20,7 +20,7 @@ window.onload = function () {
         
         
         var xhr = new XMLHttpRequest();
-        xhr.open('POST','../server/redit.php');
+        xhr.open('POST','/redit.php');
         xhr.onload = function(){
            
            var res = JSON.parse(xhr.responseText);
@@ -48,7 +48,7 @@ window.onload = function () {
     login.onclick = function(){
        
         var xhr = new XMLHttpRequest();
-        xhr.open('POST','../server/login.php');
+        xhr.open('POST','/login.php');
         xhr.onload = function(){
            
             var res = JSON.parse(xhr.responseText);

@@ -85,6 +85,9 @@ main .item-link a {
   color: #000000;
   font-style: initial;
 }
+main .item-link a:hover {
+  color: red;
+}
 main .content {
   width: 100%;
   background-color: #F5F5F5;

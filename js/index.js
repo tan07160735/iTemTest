@@ -63,7 +63,7 @@ function getlist(){
         url:'./lib/index-nav.json',
         dataType:'json',
         success:function(res){
-           console.log(res);
+          
 
            let str ='';
            
@@ -86,7 +86,7 @@ function getlist(){
                
              const index = $(this).index()
              const list  = res[index].list
-             console.log(list);
+           
 
              let str2 = ''
 
@@ -98,6 +98,18 @@ function getlist(){
             
              $('.left-item-list')
              .html(str2)
+
+            $('.left-item')
+            .on({
+                mouseover:function(){
+                    $(this).finish().show()
+                },
+                mouseleave:function(){
+                    $(this).stop().fadeOut()
+                }
+            })
+             
+             
             
                 
                 

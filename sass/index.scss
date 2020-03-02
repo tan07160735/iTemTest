@@ -101,8 +101,10 @@ main{
             color: #000000;
             font-style: initial;
         }
-        
-           
+        a:hover{
+            color: red;
+            
+        }
         
         
     }
@@ -111,7 +113,6 @@ main{
         width: 100%;
         background-color: #F5F5F5;
         
-
         .content-item{
             display: flex;
             
