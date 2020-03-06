@@ -1,0 +1,197 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.container{
+    width: 1190px;
+    margin:  0 auto;
+    position: relative;
+}
+
+
+
+header{
+
+    .top{
+        width: 100%;
+        height: 26px;
+        background-color: #F2F2F2;
+        border: 1px solid #E5E5E5;
+        .list-left{
+            float: left;
+
+            li{
+                float: left;
+                font-size: 12px;
+                color: #999999;
+                margin-right: 20px;
+                line-height: 26px;
+            }
+        }
+        .list-right{
+            float: right;
+
+            li{
+                float: left;
+                font-size: 12px;
+                color: #999999;
+                margin-left: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+    .search{
+        
+        .se-layout{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 34px;
+        }
+        .search-box{
+            width: 540px;
+            height: 31px;
+            border: 5px solid #FF5500;
+            display: flex;
+            .se-text{
+                flex: 1;
+                input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .se-btn{
+                width: 90px;
+                height: 31px;
+                background-color: #FF5500;
+                color: #F2F2F2;
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+
+main{
+   
+    .layout{
+        width: 1190px;
+        margin: 0 auto;
+    }
+
+    .title{
+        width: 100%;
+        border-bottom: 1px solid #999999;
+        margin-top: 30px;
+        padding: 15px;
+        span{
+            font-size: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        span:nth-child(1){
+            color: #FF5500;
+        }
+        span:nth-child(2){
+            border-left: 1px solid #999999;
+            border-right: 1px solid #999999;
+         
+
+        }
+
+    }
+    .info-title{
+        
+        .info-check{
+            width:11px;
+            height: 11px;
+            border: 1px solid #999999;
+        }
+    }
+    .product-item{
+        width: 100%;
+        border: 1px solid #999999;
+        .product{
+            border-bottom: 1px solid #999999;
+            display: flex;
+            justify-content: space-around;
+            
+            .img{
+                display: flex;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+                .inp{
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid #999999;
+                    margin-right: 10px;
+            }
+            
+            }
+            .number{
+                display: flex;
+                background-color: #FFF0E7;
+                width: 64px;
+                height: 25px;
+                border: 1px solid #FFE1D3;
+                input{
+                    width: 39px;
+                    height: 23px;
+                    border: 1px solid #EFBBA9;
+                    background-color: #FFF0E7;
+                    text-align: center;
+                }
+            }
+            .xiaoji{
+                span{
+                    color: #FF4400;
+                }
+            }
+            .info{
+                max-width: 232px;
+            }
+            .handle{
+                .del{
+                    cursor: pointer;
+                }
+            }
+           
+        }
+    }
+
+    .allHandle{
+        border: 1px solid #FF5500;
+        margin-top: 20px;
+        background-color: #E5E5E5;
+       
+        
+        
+        .handLayout{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .active{
+                display: inline-block;
+                width: 100px;
+                background-color: #FF5500;
+                text-align: center;
+                padding: 10px;
+            }
+            .disable{
+                display: inline-block;
+                width: 100px;
+                background-color: #999999;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+           
+    
+        
+    }
+    
+}

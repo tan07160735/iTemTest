@@ -1,5 +1,11 @@
 /// <reference path="../lib/jquery/dist/jquery.min.js" />
 //轮播图
+
+//判断是否登录
+
+
+
+
 window.onload = function(){
     var mySwiper = new Swiper('.banner1', {
         direction: 'horizontal', // 垂直切换选项
@@ -108,6 +114,10 @@ function getlist(){
                     $(this).stop().fadeOut()
                 }
             })
+
+            
+
+            
              
              
             

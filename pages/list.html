@@ -1,11 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>列表页</title>
-</head>
-<body>
     
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/pagination/pagination.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1669001_gyosn0h8l37.css">
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../lib/pagination/pagination.js"></script>
+   
+</head>
+
+<body>
+
+    <header>
+
+        <section class="top">
+            <div class="container">
+                <ul class="list-left">
+                    <li>嗨，欢迎来到天猫</li>
+                    <li><a href="./pages/login.html">请登录</a></li>
+                    <li>免费注册</li>
+                </ul>
+
+                <ul class="list-right">
+                    <li>我的淘宝</li>
+                    <li>购物车</li>
+                    <li>收藏夹</li>
+                    <li><span>|</span></li>
+                    <li>手机版</li>
+                    <li>淘宝网</li>
+                    <li>商家支持</li>
+                    <li>网站导航</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="search">
+
+            <div class="container">
+
+                <div class="se-layout">
+
+                    <div class="logo">
+                        <a href="">
+                            <img src="../images/tianmao-logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="search-box">
+
+                        <p class="se-text">
+                            <input type="text" placeholder="搜索|天猫|商品/店铺">
+                        </p>
+
+                        <button class="se-btn">搜索</button>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+    </header>
+
+    <main>
+
+        <section class="classifyTab">
+
+            <div class="content container">
+
+                <ul>
+                    <li>所有产品分类</li>
+                    <li>首页</li>
+                    <li><span>|</span></li>
+                    <li>企业采购</li>
+                </ul>
+
+                <div class="logo"><img src="../images/list-logo.png" alt=""></div>
+
+            </div>
+
+        </section>
+
+        <section class="topTab container ">
+
+            <div class="left">
+                <ul>
+                    <li>所有类目</li>
+                    <li>进口商品</li>
+                </ul>
+            </div>
+
+            <div class="right">
+
+                <div class="top">
+                    <ul>
+                        <li>所有商品分类</li>
+                        <li><span>|</span></li>
+                        <li>进口商品</li>
+                        <li><span>|</span></li>
+                        <li>进口牛奶</li>
+                    </ul>
+                    <span>相关商品900件</span>
+                </div>
+
+                <div class="bottom"></div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="product-list">
+
+            <div class="product-layout">
+                <div class="title">
+                    <span>商品列表</span>
+                </div>
+
+                <div class="product-search">
+
+                    <div class="search-top">
+                        <div>关键字:<input type="text" class="inp1"></div>
+                        <div><input type="checkbox" class="inp2">限时低价</div>
+                        <div><input type="checkbox" class="inp2">搭配减价</div>
+                        <div><input type="checkbox" class="inp2">通用排序</div>
+                        <div><input type="button" value="确定"  class="btn"></div>
+                    </div>
+
+                    <div class="search-sort">
+                        <ul class="sort-list">
+                            <li>排序</li>
+                            <li>默认</li>
+                            <li>总销量<i class="iconfont icon-paixu"></i></li>
+                            <li>周销量<i class="iconfont icon-paixu"></i></li>
+                            <li class="s-price">价格<i class="iconfont icon-paixu"></i></li>
+                            <li>上架时间</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="product-item">
+
+                    <ul class="item-list">
+
+
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+        <div class="M-box3 m-style container"></div>
+
+    </main>
+
+   
+        
+    
+
+ 
+
+
 </body>
+
 </html>

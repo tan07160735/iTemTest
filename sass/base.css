@@ -40,13 +40,13 @@ html {
     height: 100%
 }
 
-input,
+/* input,
 input[type=submit],
 input[type=reset],
 input[type=button] {
     -webkit-appearance: none;
     resize: none
-}
+} */
 
 a,
 article,

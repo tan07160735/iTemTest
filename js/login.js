@@ -57,7 +57,10 @@ window.onload = function () {
                console.log('错误提示');
                
             }else{
-                window.location.href = '../index3.html'
+                document.cookie = `username=${username.value}`
+               
+                window.location.href = '../index.html'
+               
             }  
         }
 

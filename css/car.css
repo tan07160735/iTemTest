@@ -1,0 +1,162 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .top {
+  width: 100%;
+  height: 26px;
+  background-color: #F2F2F2;
+  border: 1px solid #E5E5E5;
+}
+header .top .list-left {
+  float: left;
+}
+header .top .list-left li {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  margin-right: 20px;
+  line-height: 26px;
+}
+header .top .list-right {
+  float: right;
+}
+header .top .list-right li {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+  margin-left: 20px;
+  line-height: 26px;
+}
+header .search .se-layout {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+}
+header .search .search-box {
+  width: 540px;
+  height: 31px;
+  border: 5px solid #FF5500;
+  display: flex;
+}
+header .search .search-box .se-text {
+  flex: 1;
+}
+header .search .search-box .se-text input {
+  width: 100%;
+  height: 100%;
+}
+header .search .search-box .se-btn {
+  width: 90px;
+  height: 31px;
+  background-color: #FF5500;
+  color: #F2F2F2;
+  font-size: 20px;
+}
+
+main .layout {
+  width: 1190px;
+  margin: 0 auto;
+}
+main .title {
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  margin-top: 30px;
+  padding: 15px;
+}
+main .title span {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .title span:nth-child(1) {
+  color: #FF5500;
+}
+main .title span:nth-child(2) {
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+}
+main .info-title .info-check {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #999999;
+}
+main .product-item {
+  width: 100%;
+  border: 1px solid #999999;
+}
+main .product-item .product {
+  border-bottom: 1px solid #999999;
+  display: flex;
+  justify-content: space-around;
+}
+main .product-item .product .img {
+  display: flex;
+}
+main .product-item .product .img img {
+  width: 80px;
+  height: 80px;
+}
+main .product-item .product .img .inp {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #999999;
+  margin-right: 10px;
+}
+main .product-item .product .number {
+  display: flex;
+  background-color: #FFF0E7;
+  width: 64px;
+  height: 25px;
+  border: 1px solid #FFE1D3;
+}
+main .product-item .product .number input {
+  width: 39px;
+  height: 23px;
+  border: 1px solid #EFBBA9;
+  background-color: #FFF0E7;
+  text-align: center;
+}
+main .product-item .product .xiaoji span {
+  color: #FF4400;
+}
+main .product-item .product .info {
+  max-width: 232px;
+}
+main .product-item .product .handle .del {
+  cursor: pointer;
+}
+main .allHandle {
+  border: 1px solid #FF5500;
+  margin-top: 20px;
+  background-color: #E5E5E5;
+}
+main .allHandle .handLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .allHandle .handLayout .active {
+  display: inline-block;
+  width: 100px;
+  background-color: #FF5500;
+  text-align: center;
+  padding: 10px;
+}
+main .allHandle .handLayout .disable {
+  display: inline-block;
+  width: 100px;
+  background-color: #999999;
+  text-align: center;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=car.css.map */
